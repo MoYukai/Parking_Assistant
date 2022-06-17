@@ -1,0 +1,63 @@
+@import "../../layout/flex.wxss";
+page{
+  --textcolor :#2D2D2D;
+  --linkcolor : #10ACFB;
+  --textsize : 24rpx;
+  --textsize-sm:20rpx;
+  --lightcolor:#A8A8A8;
+}
+
+.tab{
+  height: max-content;
+  width: 85%;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  border-radius: 15rpx;
+  padding-top: 25rpx;
+  padding-bottom: 30rpx;
+}
+.row{
+  width: 80%;
+  height: max-content;
+  margin: auto;
+}
+.row2{
+  width: 78%;
+  height: max-content;
+  margin: auto;
+  margin-top: 15rpx;
+}
+.row3{
+  width: 78%;
+  height: max-content;
+  margin: auto;
+  margin-top: 40rpx;
+  text-align: right;
+  font-size: var(--textsize-sm);
+  color: var(--lightcolor);
+}
+.logo{
+  width: 90rpx;
+  height: 90rpx;
+}
+.name{
+  margin-left: 30rpx;
+  font-size: 32rpx;
+  color: var(--textcolor);
+}
+.title{
+  width: 200rpx;
+  font-size: var(--textsize);
+}
+.text{
+  font-size: var(--textsize);
+  width: 700rpx;
+  height: max-content;
+}
+.phone{
+  color: var(--linkcolor);
+}
+.lightblue{
+  color: var(--linkcolor);
+}

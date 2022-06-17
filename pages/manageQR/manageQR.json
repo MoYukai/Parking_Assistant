@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-popup": "@vant/weapp/popup/index"
+  },
+  "navigationBarTitleText": "我的挪车码",
+  "backgroundColorBottom": "#F0F0F0",
+  "backgroundColorTop" : "#F2AC3C"
+}

@@ -1,0 +1,19 @@
+<view class="tab" wx:for="{{AD}}" wx:key="id">
+  <view class="row flex align-center">
+    <image class="logo" src="{{item.dealer_icon}}"></image>
+    <view class="name">{{item.dealer}}为您服务</view>
+  </view>
+  <view class="row2 flex  justify-between">
+    <view class="title">热线：</view>
+    <view class="text">
+       <view class="phone" bindtap="make_phone_call" data-phone="{{item.phone}}">{{item.phone}}</view>
+    </view>
+  </view>
+  <view class="row2 flex  justify-between">
+    <view class="title">地址：</view>
+    <view class="text">
+      <view class="address">{{item.address}} <text class="lightblue" data-loc="112" bindtap="open_location">[地图]</text></view>
+      </view>
+  </view>
+  <view class="row3">我是4s店，我要申请此栏位</view>
+</view>

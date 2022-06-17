@@ -1,0 +1,77 @@
+@import "../../layout/flex.wxss";
+
+.tab{
+  background-color: #fff;
+  width: 100%;
+  height: max-content;
+  border-radius: 10rpx;
+  padding-bottom: 40rpx;
+}
+.tab-title{
+  height: 100rpx;
+  width: 90%;
+  margin: auto;
+}
+.line{
+  margin: auto;
+  width: 90%;
+  height: 2rpx;
+  background-color: #F6F6F6;
+  margin-bottom: 30rpx;
+
+}
+.tab-title-a{
+  color: rgb(49, 49, 49);
+}
+.tab-title-b{
+  color: rgb(134, 134, 134);
+  font-size: 22rpx;
+  width: 180rpx;
+}
+.tab-title-b>image{
+ width:30rpx;
+ height: auto;
+}
+.detail{
+
+  height: 110rpx;
+  width: 90%;
+  margin: auto;
+  margin: 30rpx auto;
+}
+.btn{
+  background-color: #EA5419;
+  color: white;
+  padding: 15rpx;
+  font-size: 20rpx;
+  border-radius: 10rpx;
+}
+.detail-title{
+  height: 75%;
+}
+.detail-title-a{
+  font-size: 33rpx;
+  color: #3a3a3a;
+}
+.detail-title-b{
+  font-size: 20rpx;
+  color: #666666;
+}
+.hover{
+  opacity: 0.8;
+}
+.settled-4s{
+  font-size: 25rpx;
+  margin: auto;
+  height: 90rpx;
+  width: 300rpx;
+  border: 2rpx rgb(248, 248, 248) solid;
+  border-radius: 12rpx;
+  color: #a5a5a5;
+  margin-top:50rpx ;
+  padding: 0 30rpx;
+}
+.settled-4s>image{
+  width: 55rpx;
+  height: auto;
+}

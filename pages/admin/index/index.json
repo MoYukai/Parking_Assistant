@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "bg-tab":"./../../../components/Background/Background",
+    "card-1":"../../../components/card-1/card-1"
+  },
+  "navigationBarTitleText": "管理员页面",
+  "backgroundColorBottom": "#F0F0F0",
+  "backgroundColorTop" : "#F2AC3C"
+
+}

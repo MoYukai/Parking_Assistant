@@ -1,0 +1,59 @@
+<wxs module="dateUtil" src="../../../utils/timeFilter.wxs"></wxs>
+<background>
+  <view class="tab">
+    <van-cell link-type="navigateTo" url="../list/list" title="品牌" is-link value="{{new_info.brand.name}}"
+      border="{{ false }}" />
+
+    <van-cell link-type="navigateTo" url="../list_of_4s/list_of_4s" title="4s店" is-link value="{{new_info.dealer.name}}"
+      border="{{ false }}" />
+
+    <van-field value="{{new_info.headno}}" label="冠字号" placeholder="请输入冠字号" input-align="right" border="{{ false }}"
+      bind:change="headnoChange" />
+
+    <van-field value="{{new_info.tag}}" label="标签" placeholder="请输入标签" input-align="right" border="{{ false }}"
+      bind:change="tagChange" />
+
+    <van-cell border="{{ false }}">
+      <view slot="title" class="row-title flex align-center">
+        数量
+      </view>
+      <view slot="right-icon">
+        <van-stepper value="{{new_info.amount}}" step="20" min="0" max="500" input-width="40px" button-size="32px"
+          bind:change="amountChange" />
+      </view>
+    </van-cell>
+
+    <view class="btn-group flex align-center justify-end">
+      <view class="btn" hover-class="btn-hover" bindtap="reset">重置</view>
+      <view class="btn btn-strong" hover-class="btn-hover" bindtap="confirm">确认</view>
+    </view>
+
+  </view>
+  <view class="his-title">历史生成记录</view>
+  <view class="empty-bar flex flex-direction align-center justify-start" wx:if="{{history.length == 0}}">
+    <image src="../../../static/icon/empty.png" mode="widthFix"></image>
+    <view>无历史记录</view>
+  </view>
+  <view class="collapse" wx:for="{{history}}" wx:for-item="item" wx:if="{{history.length != 0}}">
+    <van-collapse value="{{ activeNames }}" bind:change="onChange" border="{{false}}">
+      <van-collapse-item title="{{item.new_info.tag}}" name="{{item._id}}" icon="bookmark-o"
+        value="{{dateUtil.dateFormat(item.createTime,'YYYY-MM-dd hh:mm')}}">
+        <van-cell-group border="{{false}}">
+          <van-cell title="品牌" value="{{item.new_info.brand.name}}" border="{{false}}" />
+          <van-cell title="4s店" value="{{item.new_info.dealer.name}}" border="{{false}}" />
+          <van-cell title="冠字号" value="{{item.new_info.headno}}" border="{{false}}" />
+          <van-cell title="数量" value="{{item.new_info.amount}}" border="{{false}}" />
+          <van-cell title="打印" value="{{item.new_info.printed ? '已经打印' : '未打印'}}" border="{{false}}" />
+        </van-cell-group>
+        <van-cell-group border="{{false}}">
+          <view class="btn-group flex align-center justify-end">
+            <view class="btn" hover-class="btn-hover" bindtap="del_by_recid" data-recid="{{item._id}}">删除</view>
+            <view class="btn btn-strong" hover-class="btn-hover">确认打印</view>
+          </view>
+        </van-cell-group>
+      </van-collapse-item>
+    </van-collapse>
+  </view>
+
+
+</background>

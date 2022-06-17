@@ -1,0 +1,48 @@
+<view class="bg-top">
+  <view></view>
+  <view class="tab">
+    <view class="row flex justify-around">
+      <view class="col flex justify-start flex-direction align-center">
+        <image src="../../static/icon/security.png" mode="widthFix"></image>
+        <view class="title">隐私通话</view>
+        <view class="text">保护双方隐私、安全</view>
+      </view>
+      <view class="col flex justify-start flex-direction align-center">
+        <image src="../../static/icon/high_speed.png" mode="widthFix"></image>
+        <view class="title">快速有效</view>
+        <view class="text">比直接拨打电话更快</view>
+      </view>
+      <view class="col flex justify-start flex-direction align-center">
+        <image src="../../static/icon/phone&sms.png" mode="widthFix"></image>
+        <view class="title">多种通知</view>
+        <view class="text">拨号、短信自由选择</view>
+      </view>
+    </view>
+    <view class="row">
+      <button class="btn first-btn" hover-class="btn-hover" bindtap="gotoGetMyCode">获取我的专属挪车码</button>
+    </view>
+    <view class="row tip flex align-center justify-center" bindtap="scan">
+      <image src="../../static/icon/scan.png" mode="widthFix"></image>
+      <view>扫码绑定</view>
+    </view>
+  </view>
+  <view class="tab-2">
+    <view class="row">
+      <view class="tab-2-title">如何使用挪车码？</view>
+    </view>
+    <view class="row-2 flex align-start">
+      <view class="tab-2-alpha">A.</view>
+      <view class="tab-2-text">拿到挪车二维码后，使用微信“扫一扫”进行首次使用绑定，绑定步骤请参考提示</view>
+    </view>
+    <view class="row-2 flex align-start">
+      <view class="tab-2-alpha">B.</view>
+      <view class="tab-2-text">按照提示绑定二维码后，再次使用绑定手机扫描挪车码将进入“管理我的挪车码”页面</view>
+    </view>
+     <view class="row-2 flex align-start">
+      <view class="tab-2-alpha">C.</view>
+      <view class="tab-2-text">如果需要测试拨打，请使用其他手机扫描挪车码即可出现拨号页面</view>
+    </view>
+  </view>
+</view>
+<image class="bg-top2" src="../../static/img/index-arc.png" mode="widthFix">
+</image>

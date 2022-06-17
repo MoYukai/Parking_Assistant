@@ -1,0 +1,5 @@
+<bg-tab>
+  <card-1 text="经销商管理" image="../../static/icon/dealer.png"></card-1>
+  <card-1 text="用户管理" image="../../static/icon/user_management.png" bindtap="goto_user_list"></card-1>
+  <card-1 text="新增挪车码" image="../../static/icon/new.png" bindtap="goto_gen"></card-1>
+</bg-tab>

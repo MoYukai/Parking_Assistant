@@ -1,0 +1,27 @@
+<view class="bg-top">
+  <view wx:if="{{callRec == ''}}" class="tab null-tab flex align-center justify-center">
+    <view class="null-box">
+      <view class="null-code flex flex-direction align-center justify-around">
+        <image src="../../static/icon/call_record.png" mode="widthFix"></image>
+        <view class="null-code-text">暂无通话记录</view>
+      </view>
+    </view>
+  </view>
+  <view class="tab" wx:for="{{callRec}}" wx:key="index">
+    <view class="row flex justify-between align-center">
+      <view class="col-1 flex justify-start">
+
+        <view class="col-b flex flex-direction">
+          <view class="phone">{{item.messageBody.peer_no}}</view>
+          <view class="time">{{item.messageBody.call_out_time}}</view>
+        </view>
+      </view>
+      <view class="col-2">
+        <view class="btn btn-strong" hover-class="btn-hover" data-peerNo ="{{item.messageBody.peer_no}}" bindtap="callback">回拨</view>
+      </view>
+    </view>
+  </view>
+  <view class="oqp"></view>
+</view>
+<image class="bg-top2" src="../../static/img/index-arc.png" mode="widthFix">
+</image>

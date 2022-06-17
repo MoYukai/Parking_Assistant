@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "background" : "../../../components/Background/Background",
+    "map-tab" : "../../../components/map-tab/map-tab",
+    "dealer-tab" : "../../../components/dealer-tab/dealer-tab",
+    "route-pop" : "../../../components/route-pop/route-pop"
+
+
+  },
+  "navigationBarTitleText": "免费领取地址",
+  "disableScroll" : true
+}

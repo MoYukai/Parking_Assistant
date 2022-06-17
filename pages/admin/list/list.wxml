@@ -1,0 +1,11 @@
+<background>
+  <view class="tab">
+    <van-index-bar highlight-color="#EA5419" >
+      <view wx:for="{{list}}" wx:for-index="key" wx:for-item="value" wx:key="key">
+        <van-index-anchor index="{{key}}" wx:if="{{value.length}}"/>
+        <van-cell wx:for="{{value}}" wx:for-item="item" title="{{item.Chinese_name}}" wx:key="key" bindtap="getValue" data-detail="{{item}}"/>
+      </view>
+    </van-index-bar>
+  </view>
+
+</background>

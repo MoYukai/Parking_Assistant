@@ -1,0 +1,9 @@
+<background>
+  <shop-card 
+    shop_image="../../static/img/DEMO-s-EP202101288672.png"
+    shop_name="无胶挡风静电贴"
+    btn_name="立即购买"
+    bind:Btn_event = "gotoOC"
+    >
+  </shop-card>
+</background>

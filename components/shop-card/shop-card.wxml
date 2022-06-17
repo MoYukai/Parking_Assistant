@@ -1,0 +1,7 @@
+<view class="tab">
+    <view class="row flex">
+      <image class="img" src="{{shop_image}}" mode="widthFix"></image>
+      <view class="title">{{shop_name}}</view>
+    </view>
+    <view class="row flex justify-end"><view class="btn flex align-center justify-center" hover-class="btn-hover" bindtap="Btn">{{btn_name}}</view></view>
+  </view>

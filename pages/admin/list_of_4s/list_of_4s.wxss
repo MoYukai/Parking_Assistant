@@ -1,0 +1,30 @@
+.tab{
+  min-height: 200rpx;
+  height: auto;
+  width: 88%;
+  background-color: #fff;
+  border-radius: 15rpx;
+  margin: 0 auto;
+  padding-top: 20rpx;
+  padding-bottom:20rpx;
+}
+.region-tab{
+  background-color: #fff;
+  height: 140rpx;
+  width: 88%;
+  border-radius: 15rpx;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom:20rpx;
+}
+.region-tab-null{
+  color: rgb(107, 107, 107);
+  font-size: 35rpx;
+  width: 100%;
+  text-align: center;
+}
+.region-tab-notnull{
+  color: rgb(73, 73, 73);
+  width: 100%;
+}

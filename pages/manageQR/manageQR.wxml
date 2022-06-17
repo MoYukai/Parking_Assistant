@@ -1,0 +1,58 @@
+<view class="bg-top">
+
+  <view wx:if="{{info == ''}}" class="tab null-tab flex align-center justify-center">
+    <view class="null-box">
+      <view class="null-code flex flex-direction align-center justify-around">
+        <image src="../../static/icon/empty.png" mode="widthFix"></image>
+        <view class="null-code-text">暂无绑定的挪车码</view>
+      </view>
+    </view>
+  </view>
+  <view class="tab" wx:for="{{info}}" wx:key="index">
+    <view class="row no">编号：{{item.seriesno}}</view>
+    <view class="flex flex-direction justify-around section-1">
+      <view class="row flex justify-between align-center">
+        <view class="title">绑定车牌</view>
+        <view class="car-text">{{item.car}}</view>
+      </view>
+      <view class="row flex justify-between align-center">
+        <view class="title">绑定手机</view>
+        <view class="phone-text">{{item.phone}}</view>
+      </view>
+      <view class="row flex justify-between align-center">
+        <view class="title">电话通知</view>
+        <switch class="switch" color="#EA5419" checked="{{item.phoneSwitch}}" bindchange="Switch" data-sn="{{item.seriesno}}" data-switch="phone"></switch>
+      </view>
+      <view class="row flex justify-between align-center">
+        <view class="title">短信通知</view>
+        <switch class="switch" color="#EA5419" checked="{{item.smsSwitch}}" bindchange="Switch" data-sn="{{item.seriesno}}" data-switch="sms"></switch>
+      </view>
+    </view>
+    <view class="row flex justify-end">
+      <view class="btn" hover-class="btn-hover" data-seriesno="{{item.seriesno}}" bindtap="dis_bind_show">解除绑定</view>
+      <view class="btn btn-strong" hover-class="btn-hover" data-seriesno="{{item.seriesno}}" bindtap="edit_info">更改信息</view>
+    </view>
+  </view>
+
+</view>
+<image class="bg-top2" src="../../static/img/index-arc.png" mode="widthFix">
+</image>
+
+<van-popup show="{{show}}" position="center" bind:close="onClose" custom-style="border-radius:20rpx">
+  <view class="popup-box">
+    <view class="popup-icon flex align-center justify-center">
+      <image src="../../static/icon/question_title.png" mode="widthFix"></image>
+    </view>
+    <view class="popup-title">
+      是否解绑
+    </view>
+    <view class="popup-tips">
+      温馨提示：解绑后挪车码将恢复为初始状态，后续可以重新绑定
+    </view>
+    <view class="flex">
+      <view class="popup-btn popup-btn-light" hover-class="btn-hover" bindtap="dis_bind_hide">我再想想</view>
+      <view class="popup-btn" hover-class="btn-hover" bindtap="dis_bind">确定解绑</view>
+    </view>
+
+  </view>
+</van-popup>

@@ -1,0 +1,40 @@
+<view class="main">
+  <view class="map-tab">
+    <map
+    id="map" 
+    markers="{{dealer}}" 
+    include-points="{{includeAll}}"
+    scale="{{scale}}"  
+    show-location 
+    show-compass 
+    bindmarkertap="bindmarkertap"
+    bindcallouttap="callouttap"
+    >
+    </map>
+  </view>
+
+  <scroll-view class="map-bottom-tab" scroll-y="true">
+    <view class="bottom-col">
+      <map-tab area="{{area}}">
+        <dealer-tab ids="{{item.id}}" name="{{item.name}}" address="{{item.address}}" distance="{{item.distance}}" wx:for="{{dealer}}"
+          wx:key="index" wx:if="{{dealer}}"
+          bind:select = "select"
+          bind:openLoc = "openLoc">
+        </dealer-tab>
+        <view wx:if="{{dealer == ''}}" class="null">
+          附近暂无合作经销商
+        </view>
+      </map-tab>
+    </view>
+
+  </scroll-view>
+</view>
+<route-pop 
+show="{{show}}" 
+name="{{pop.name}}" 
+address="{{pop.address}}" 
+phone="{{pop.phone}}" 
+picture="{{pop.picture}}"
+longitude="{{pop.longitude}}"
+latitude="{{pop.latitude}}"
+ ></route-pop>

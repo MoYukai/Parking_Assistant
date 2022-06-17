@@ -1,0 +1,32 @@
+<background>
+
+
+<view class="region-tab flex align-center   justify-center"  bindtap="showPopup">
+<view class="region-tab-null" wx:if="{{region.length == 0}}">请选择地区</view>
+<view class="region-tab-notnull flex align-center justify-around" wx:if="{{region.length > 0}}">
+  <view>{{region[0].name}}</view>
+  <view>{{region[1].name}} </view> 
+  <view>{{region[2].name}}</view> 
+  </view>
+
+</view>
+  <view class="tab">
+    <van-cell wx:for="{{list_4s}}" title="{{item.dealer_name}}" data-detail="{{item}}" bindtap="getvalue"/>
+  </view>
+
+  <van-popup
+  round
+  show="{{ regionShow }}"
+  position="bottom"
+  custom-style="height: 50%;"
+  bind:close="onClose"
+>
+<van-area 
+title="地区选择"
+area-list="{{ areaList }}" 
+bind:confirm="regionConfirm"
+bind:cancel="regionCancel"
+/>
+</van-popup>
+
+</background>

@@ -1,0 +1,104 @@
+page{
+  background-color: #F0F0F0;
+}
+button{
+  background-color: #fff;
+}
+button::after{
+  border: none;
+}
+.bg-top{
+  width: 100%;
+  height: 150rpx;
+  background-image: linear-gradient(180deg, #F2AC3C 0%, #EC6E2F 100%);
+  position: relative;
+  padding-top: 0rpx;
+}
+.bg-top2{
+  width: 100%;
+  height: auto;
+}
+.tab{
+  height:max-content;
+  width: 85%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 15rpx;
+  padding-bottom: 50rpx;
+  margin-top: 35rpx;
+}
+.tab-t{
+  height:max-content;
+  width: 85%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 15rpx;
+  margin-top: 35rpx;
+  padding-top:20rpx;
+  padding-bottom:20rpx
+}
+.tab-2{
+  height:max-content;
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.row{
+  height:max-content;
+  width: 85%;
+  margin: 0 auto;
+}
+.row-2{
+  padding-left: 20rpx ;
+  height:100rpx;
+  width: 100%;
+  margin: 0 auto;
+}
+.col{
+  padding:15rpx ;
+  width: 170rpx;
+  margin-top: 45rpx; 
+}
+.col>image{
+  width: 60rpx;
+  height: auto;
+}
+.title{
+  color: #525252;
+  margin-top: 20rpx;
+  font-size: 25rpx;
+}
+.btn-hover{
+  border-radius: 15rpx;
+  background-color: rgba(0, 0, 0, 0.05);
+  --opacity:0.7 !important;
+}
+.header{
+  background-color: rgba(0, 0, 0, 0.24);
+  height: 66rpx;
+  width: 66rpx;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 20rpx;
+  margin-left: 8rpx;
+}
+.nickname{
+  color: white;
+  font-size:30rpx;
+  font-weight: 500;
+  letter-spacing: 1rpx;
+}
+.icon{
+  width: 40rpx;
+  height:auto;
+  margin-right: 30rpx;
+}
+.text{
+  color:#626262 ;
+  font-size: 24rpx;
+}
+.line{
+  width: 100%;
+  height: 5rpx;
+  background-color: black;
+}

@@ -1,0 +1,18 @@
+@import "../../layout/flex.wxss";
+page{
+  color: rgb(65, 65, 65)
+}
+image{
+  width: 75rpx;
+}
+.card{
+  width: 80%;
+  height: 170rpx;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 15rpx;
+  margin-bottom:30rpx ;
+}
+.hover{
+  color: rgb(122, 122, 122);
+}

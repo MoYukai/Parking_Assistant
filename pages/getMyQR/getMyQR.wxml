@@ -1,0 +1,20 @@
+<view class="bg-top">
+  <sq-card title="去4s店免费领取" 
+           image="../../static/icon/4S.png"
+           btnTitle="去领取"
+           bind:Btn_event = "goto4S"
+           >
+  </sq-card>
+
+
+  <sq-card title="购买专业挪车贴" 
+           image="../../static/icon/shopping_car.png"
+           btnTitle="去购买"
+           bind:Btn_event = "gotoBuy"
+           >
+  </sq-card>
+
+
+</view>
+<image class="bg-top2" src="../../static/img/index-arc.png" mode="widthFix">
+</image>

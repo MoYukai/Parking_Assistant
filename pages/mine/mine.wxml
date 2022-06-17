@@ -1,0 +1,38 @@
+<view class="bg-top">
+  <view class="row flex justify-start align-center">
+    <view class="header">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="nickname"><open-data type="userNickName"></open-data></view>
+  </view>
+  <view class="tab">
+    <view class="row flex justify-around">
+      <view class="col flex justify-start flex-direction align-center" hover-class="btn-hover" bindtap="gotoManageQR">
+        <image src="../../static/icon/QR_code.png" mode="widthFix"></image>
+        <view class="title">我的挪车码</view>
+      </view>
+      <view class="col flex justify-start flex-direction align-center" hover-class="btn-hover" bindtap="gotoCallRec">
+        <image src="../../static/icon/call_rec.png" mode="widthFix"></image>
+        <view class="title">通话记录</view>
+      </view>
+    </view>
+  </view>
+  <view class="tab-t flex align-center">
+    <view class="tab-2 flex flex-direction justify-around align-center">
+    <button open-type="contact" class="row-2 flex align-center justify-start" hover-class="btn-hover">
+      <image src="../../static/icon/service.png" mode="widthFix" class="icon"></image>
+      <view class="text">联系客服</view>
+    </button>
+    <button open-type="feedback" class="row-2 flex align-center justify-start" hover-class="btn-hover">
+      <image src="../../static/icon/opinion.png" mode="widthFix" class="icon"></image>
+      <view class="text">意见反馈</view>
+    </button>
+    <button  wx:if="{{isAdmin}}" class="row-2 flex align-center justify-start" hover-class="btn-hover" bindtap="gotoAdmin">
+      <image src="../../static/icon/admin.png" mode="widthFix" class="icon"></image>
+      <view class="text">管理员界面</view>
+    </button>
+    </view>
+  </view>
+</view>
+<image class="bg-top2" src="../../static/img/index-arc.png" mode="widthFix">
+</image>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "shop-card" : "../../components/shop-card/shop-card",
+    "background":"../../components/Background/Background"
+  },
+  "navigationBarTitleText": "购买挪车贴",
+  "backgroundColorBottom": "#F0F0F0",
+  "backgroundColorTop" : "#F2AC3C"
+}

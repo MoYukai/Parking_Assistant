@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "ad-tab": "../../components/ADtab/ADtab"
+  },
+  "navigationBarTitleText": "挪车助手",
+  "disableScroll": true,
+  "backgroundColorBottom": "#F0F0F0",
+  "backgroundColorTop" : "#F2AC3C"
+  
+}

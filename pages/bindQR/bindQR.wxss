@@ -1,0 +1,191 @@
+view
+ {
+	box-sizing: border-box;
+}
+button{
+  padding:0;
+}
+button::after{
+  border: none;
+}
+/* 嵌入开始 */
+.text-theme{
+  font-size: 20rpx;
+  color: rgb(0, 162, 255);
+  margin-bottom: 20rpx;
+}
+.keyboard-box{
+  width: 100%;
+  background-color: #fff;
+}
+.switch-car-num{
+	width:15rpx;
+	height:15rpx;
+  margin-right:10rpx;
+  margin-bottom: 20rpx;
+}
+.car-number{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.car-block{
+	width:80rpx;
+	height:60rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:2rpx solid #e9e9e9;
+	margin:0 8rpx;
+}
+/* 嵌入结束 */
+page{
+  background-color: #F0F0F0;
+}
+.bg-top2{
+  width: 100%;
+  height: auto;
+}
+.bg-top{
+  width: 100%;
+  height: 150rpx;
+  background-image: linear-gradient(180deg, #F2AC3C 0%, #EC6E2F 100%);
+  position: relative;
+  padding-top: 15rpx;
+}
+.row{
+  height:max-content;
+  width: 85%;
+  margin: 0 auto;
+}
+.row-2{
+  height:max-content;
+  width: 75%;
+  margin: 0 auto;
+}
+.tip{
+  color: white;
+  font-size: 22rpx;
+}
+.tab{
+  width: 85%;
+  height:max-content;
+  background-color: #fff;
+  border-radius: 15rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  padding-top: 25rpx;
+  padding-bottom: 45rpx;
+}
+.no{
+  color: #C6C6C6;
+  font-size: 23rpx;
+  margin-bottom: 35rpx;
+}
+.title{
+  font-size: 35rpx;
+  color: #7B7B7B;
+}
+.master{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  height: max-content;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.267);
+}
+.title-row{
+  color:#7B7B7B ;
+  font-size: 25rpx;
+}
+.input{
+  width:360rpx ;
+  height:71rpx ;
+  background-color: #F9F9F9;
+  border-radius: 10rpx;
+  color: #5a5a5a;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+}
+.input-sms{
+  width:220rpx;
+  height:71rpx ;
+  background-color: #F9F9F9;
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+  color: #5a5a5a;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+}
+.phone-sms{
+  height: 160rpx;
+}
+.send-sms{
+  color: #757575;
+  height: 70rpx;
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius:10rpx;
+  background-color: #ECECEC;
+  width: 130rpx;
+  font-size: 20rpx;
+}
+.sms-box{
+  width:380rpx ;
+}
+.btn-hover{
+  opacity:0.7 !important;
+}
+.btn{
+  margin: 0 auto;
+  margin-top: 80rpx;
+  background-color: #EC602A;
+  color: white;
+  font-size: 28rpx;
+  width: 75%;
+  height: 80rpx;
+  border-radius: 10rpx;
+}
+.popup-box{
+  width: 600rpx;
+  height: 550rpx;
+  background-color: #fff;
+  padding-top: 35rpx;
+}
+.popup-icon{
+  width: 120rpx;
+  height:120rpx;
+  border-radius: 100%;
+  background-color: #F2AC3C;
+  color: #EC602A;
+  margin: 0 auto;
+}
+.popup-icon>image{
+  width: 66rpx;
+  height:auto;
+}
+.popup-title{
+  color:#EC602A;
+  font-size: 35rpx;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.popup-tips{
+  color:#969696;
+  font-size: 26rpx;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 55rpx;
+}
+.popup-btn{
+  margin: auto;
+  background-color: #EC602A;
+  width: 60%;
+  height: 80rpx;
+  border-radius: 12rpx;
+  color: white;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin-top: 66rpx;
+
+}

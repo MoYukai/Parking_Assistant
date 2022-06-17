@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "background" : "../../components/Background/Background"
+  },
+  "navigationBarTitleText": "确认订单"
+}

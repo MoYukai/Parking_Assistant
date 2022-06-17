@@ -1,0 +1,16 @@
+page{
+  background-color: #F0F0F0;
+}
+.height{
+  height: 190rpx;
+}
+.bg-top{
+  width: 100%;
+  background-image: linear-gradient(180deg, #F2AC3C 0%, #EC6E2F 100%);
+  position: relative;
+  padding-top: 50rpx;
+}
+.bg-top2{
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,10 @@
+.tab{
+  min-height: 200rpx;
+  height: auto;
+  width: 88%;
+  background-color:#F7F8FA;
+  border-radius: 15rpx;
+  margin: 0 auto;
+  padding-top: 20rpx;
+  padding-bottom:20rpx;
+}

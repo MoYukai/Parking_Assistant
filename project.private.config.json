@@ -1,0 +1,90 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "扫码结果",
+          "pathName": "pages/scanResult/scanResult",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "挪车助手首页",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "管理挪车码",
+          "pathName": "pages/manageQR/manageQR",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "绑定挪车码",
+          "pathName": "pages/bindQR/bindQR",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "通话记录",
+          "pathName": "pages/callRecords/callRecords",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "带参数进入首页",
+          "pathName": "pages/index/index",
+          "query": "seriesno=EP202101288655",
+          "scene": null
+        },
+        {
+          "name": "1599挪车码",
+          "pathName": "pages/index/index",
+          "query": "seriesno=EP202101288655",
+          "scene": null
+        },
+        {
+          "name": "152169",
+          "pathName": "pages/index/index",
+          "query": "seriesno=EP202101288899",
+          "scene": 1011
+        },
+        {
+          "name": "获取我的二维码",
+          "pathName": "pages/getMyQR/getMyQR",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "q=https%3A%2F%2Fpixcel.cn%2Fminiprg%2Feasyparking%3Fseriesno%3DEP202101285326&scancode_time=1612775285",
+          "scene": null
+        },
+        {
+          "name": "去4s店领取",
+          "pathName": "pages/getMyQR/map_4s/map_4s",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

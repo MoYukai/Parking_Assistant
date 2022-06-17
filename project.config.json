@@ -1,0 +1,187 @@
+{
+    "description": "项目配置文件",
+    "packOptions": {
+        "ignore": []
+    },
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "enhance": true,
+        "postcss": true,
+        "preloadBackgroundData": false,
+        "minified": true,
+        "newFeature": false,
+        "coverView": true,
+        "nodeModules": true,
+        "autoAudits": false,
+        "showShadowRootInWxmlPanel": true,
+        "scopeDataCheck": false,
+        "uglifyFileName": false,
+        "checkInvalidKey": true,
+        "checkSiteMap": true,
+        "uploadWithSourceMap": true,
+        "compileHotReLoad": false,
+        "lazyloadPlaceholderEnable": false,
+        "useMultiFrameRuntime": true,
+        "useApiHook": true,
+        "useApiHostProcess": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "enableEngineNative": false,
+        "useIsolateContext": true,
+        "userConfirmedBundleSwitch": false,
+        "packNpmManually": false,
+        "packNpmRelationList": [],
+        "minifyWXSS": true,
+        "disableUseStrict": false,
+        "showES6CompileOption": false,
+        "useCompilerPlugins": false,
+        "minifyWXML": true
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.16.0",
+    "projectname": "Parking_Assistant",
+    "cloudfunctionRoot": "cloud_functions/",
+    "debugOptions": {
+        "hidedInDevtools": []
+    },
+    "scripts": {},
+    "staticServerOptions": {
+        "baseURL": "",
+        "servePath": ""
+    },
+    "isGameTourist": false,
+    "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+    "appid": "wx2a90a5a5f0bc40d2",
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/scanResult/scanResult",
+                    "pathName": "pages/scanResult/scanResult",
+                    "query": "seriesno=EP202101288655",
+                    "scene": null
+                },
+                {
+                    "name": "pages/bindQR/bindQR",
+                    "pathName": "pages/bindQR/bindQR",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/index/index",
+                    "pathName": "pages/index/index",
+                    "query": "seriesno=EP202101288899",
+                    "scene": null
+                },
+                {
+                    "name": "pages/manageQR/manageQR",
+                    "pathName": "pages/manageQR/manageQR",
+                    "query": "seriesno=EP202101288655",
+                    "scene": null
+                },
+                {
+                    "name": "通话记录",
+                    "pathName": "pages/callRecords/callRecords",
+                    "query": "seriesno=EP202101288655",
+                    "scene": null
+                },
+                {
+                    "name": "全新",
+                    "pathName": "pages/index/index",
+                    "query": "seriesno=EP202101288655",
+                    "scene": null
+                },
+                {
+                    "name": "pages/callRecords/callRecords",
+                    "pathName": "pages/callRecords/callRecords",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "师兄二维码",
+                    "pathName": "pages/index/index",
+                    "query": "q=https%3A%2F%2Fpixcel.cn%2Fminiprg%2Feasyparking%3Fseriesno%3DEP202101285326&scancode_time=1612818647",
+                    "scene": 1011
+                },
+                {
+                    "name": "我的页面",
+                    "pathName": "pages/mine/mine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "管理员页面",
+                    "pathName": "pages/admin/index/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/getMyQR/getMyQR",
+                    "pathName": "pages/getMyQR/getMyQR",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "购买挪车贴",
+                    "pathName": "pages/buyQR/buyQR",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "打印二维码",
+                    "pathName": "pages/printQR/printQR",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/index/index",
+                    "pathName": "pages/index/index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "新增挪车码",
+                    "pathName": "pages/admin/gen_stickers/gen_stickers",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "管理员-品牌-4s店列表",
+                    "pathName": "pages/admin/list/list",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "4s List",
+                    "pathName": "pages/admin/list_of_4s/list_of_4s",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/admin/user_admin/user_list/user_list",
+                    "pathName": "pages/admin/user_admin/user_list/user_list",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/getMyQR/map_4s/map_4s",
+                    "pathName": "pages/getMyQR/map_4s/map_4s",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

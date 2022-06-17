@@ -1,0 +1,102 @@
+page{
+  background-color: #F0F0F0;
+}
+.bg-top{
+  width: 100%;
+  height: 450rpx;
+  background-image: linear-gradient(180deg, #F2AC3C 0%, #EC6E2F 100%);
+
+}
+.bg-top:after{
+  background-color: #EC6E2F;
+  content: '';
+  width: 160%;
+  height: 550rpx;
+  position: absolute;
+  left: -30%;
+  top:0;
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+}
+.text{
+  color: white;
+  font-weight: bold;
+  font-size:45rpx;
+  margin: 0 auto;
+  width: max-content;
+  padding-top: 35rpx;
+}
+.card{
+  margin: 0 auto;
+  margin-top: 42rpx;
+  width: 410rpx;
+  height: 120rpx;
+  border: 6rpx white solid;
+  border-radius: 20rpx;
+  color: white;
+  font-size:55rpx;
+  text-align:center;
+  line-height: 120rpx;
+  margin-bottom: 40rpx;
+}
+.tip{
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  font-size:25rpx;
+  text-align:center;
+}
+.tab{
+  width: 85%;
+  height:max-content;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15rpx;
+  margin: 0 auto;
+  margin-top:45rpx;
+  padding-top: 20rpx;
+  padding-bottom: 40rpx;
+}
+.tab-1,.tab-2{
+  padding: 0rpx !important;
+  font-weight: normal;
+  color: white;
+  border-radius: 13rpx;
+  height: 100rpx !important;
+  line-height: 100rpx;
+  width: 480rpx !important;
+  background-color: gray;
+}
+.tab-1{
+  background-color: #EA5419;
+}
+.tab-2{
+  background-color: #F2AC3C;
+}
+.btn-hover{
+  background-color:rgba(0,0,0,0.1);opacity:0.7 !important;
+}
+.description{
+  width: 480rpx;
+  color: rgb(168, 168, 168);
+  font-size:20rpx;
+  margin: 0 auto;
+}
+.description>image{
+  height: 30rpx;
+  width: 30rpx;
+  margin-right: 10rpx;
+}
+.btn-group{
+  height: max-content;
+}
+.tab-1,.tab-2{
+  margin-top: 20rpx;
+}
+.tipsss{
+  color:#EA5419;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  font-size:20rpx
+
+}

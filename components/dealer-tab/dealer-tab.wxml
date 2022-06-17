@@ -1,0 +1,9 @@
+<view class="detail flex align-center justify-between"
+  >
+    <view class="detail-title flex flex-direction justify-between" data-id="{{ids}}" bindtap="select">
+      <view class="detail-title-a">{{name}}</view>
+      <view class="detail-title-b">{{distance}} | {{address}}</view>
+    </view>
+    <view class="btn" hover-class="hover" bindtap="openLoc" data-id="{{ids}}">到这里去
+    </view>
+  </view>

@@ -1,0 +1,18 @@
+<view class="bg-top">
+  <view class="tab">
+
+    <view class="row flex justify-center">
+      <image class="img" src="../../static/img/DEMO-s-EP202101288672.png" mode="widthFix"></image>
+    </view>
+    <view class="row flex justify-center title">挪车码已经为您生成</view>
+    <view class="row row-text">1. 建议使用A6纸进行打印 </view>
+    <view class="row row-text">2. 打印完成后务必使用微信扫一扫，进行绑定操作 </view>
+    <view class="row row-text">3. 完成后即可放置在挡风前中控台使用</view>
+    <view class="row2 flex justify-end">
+      <view class="btn flex align-center justify-center" hover-class="btn-hover">保存并打印</view>
+    </view>
+  </view>
+
+</view>
+<image class="bg-top2" src="../../static/img/index-arc.png" mode="widthFix">
+</image>

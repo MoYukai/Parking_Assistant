@@ -1,0 +1,5 @@
+<view class="bg-top height">
+<slot></slot>
+</view>
+<image class="bg-top2" src="../../static/img/index-arc.png" mode="widthFix">
+</image>

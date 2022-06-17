@@ -1,0 +1,20 @@
+<view class="bg-top">
+  <view class="text">临时停靠 请多关照</view>
+  <view class="card">{{info.car}}</view>
+  <view class="tip">我的爱车如果阻碍了您的车辆通行，请点击下方的按钮通知我</view>
+  <view class="tip">给您带来的不便敬请谅解！</view>
+  <view class="tab">
+    <view class="description flex justify-start">
+      <image src="../../static/icon/shield.png" mode="widthFix"></image>
+      <view>将通过隐私号联系到对方，保护您的隐私</view>
+    </view>
+    <view class="flex flex-direction align-center justify-center btn-group">
+      <button wx:if="{{info.showPhone}}" class="tab-1" hover-class="btn-hover" bindtap="makeCall"
+        disabled="{{phoneDisable}}" >{{phoneBtn}}</button>
+      <button wx:if="{{info.showSMS}}" class="tab-2" hover-class="btn-hover" bindtap="sendSms" disabled="{{smsDisable}}">{{smsBtn}}</button>
+      <button wx:if="{{info.showSMS == false && info.showPhone == false}}" class="tab-2" hover-class="btn-hover"  disabled="true">暂时无法联系上车主</button>
+    </view>
+    <view wx:if="{{info.showSMS == false && info.showPhone == false}}" class="tipsss">车主开启了“免打扰模式”，请稍后扫码重试</view>
+  </view>
+  <ad-tab></ad-tab>
+</view>

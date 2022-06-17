@@ -1,0 +1,7 @@
+<view class="tab flex flex-direction align-center justify-between">
+    <view class="flex flex-direction align-center">
+      <image src="{{image}}" mode="widthFix" class="icon"></image>
+      <view class="text">{{title}}</view>
+    </view>
+    <view class="btn flex align-center justify-center" hover-class="btn-hover" bindtap="goto">{{btnTitle}}</view>
+  </view>

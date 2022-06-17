@@ -1,0 +1,71 @@
+@import "../../layout/flex.wxss";
+page{
+  color: rgb(58, 58, 58)
+}
+blue{
+  color: rgb(0, 77, 243);
+}
+.pop{
+  background-color: #fff;
+  width: 600rpx;
+  height: 800rpx;
+}
+.one{
+  height: 200rpx;
+  width: 80%;
+  margin: auto;
+  margin-top:30rpx
+}
+.two{
+  height:300rpx;
+  width: 80%;
+  margin: auto;
+  margin-top:30rpx;
+  background-color: rgb(189, 189, 189);
+  border-radius: 15rpx;
+  overflow: hidden;
+}
+.two>image{
+
+  width: 100%;
+  height: auto;
+
+}
+.name{
+  font-size: 35rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space:nowrap;
+}
+.address{
+  font-size: 25rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space:nowrap;
+}
+.phone{
+  font-size: 25rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space:nowrap;
+}
+.three{
+font-size: 20rpx;
+  height:120rpx;
+  width: 80%;
+  margin: auto;
+  margin-top:70rpx;
+  border-radius: 15rpx;
+}
+.icon{
+  width: 80rpx;
+}
+.icon-a{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 12rpx;
+  padding: 10rpx;
+}
+.hover{
+  background-color: rgb(248, 248, 248);
+}

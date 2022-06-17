@@ -1,0 +1,4 @@
+<view class="card flex align-center justify-around" hover-class="hover">
+  <image src="{{image}}" mode="widthFix"></image>
+  <view>{{text}}</view>
+</view>

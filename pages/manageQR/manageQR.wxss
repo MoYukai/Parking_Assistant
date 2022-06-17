@@ -1,0 +1,141 @@
+page{
+  background-color: #F0F0F0;
+}
+.bg-top2{
+  width: 100%;
+  height: auto;
+}
+.bg-top{
+  width: 100%;
+  height: 150rpx;
+  background-image: linear-gradient(180deg, #F2AC3C 0%, #EC6E2F 100%);
+  position: relative;
+  padding-top: 30rpx;
+}
+.tab{
+  height:max-content;
+  width: 85%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 15rpx;
+  padding-bottom: 50rpx;
+  padding-top: 30rpx;
+  margin-bottom: 22rpx;
+}
+.row{
+  height:45rpx;
+  width: 85%;
+  margin: 0 auto;
+}
+.no{
+  color: #C6C6C6;
+  font-size: 23rpx;
+  margin-bottom: 35rpx;
+}
+.title{
+  color: #8F8F8F;
+  font-size: 25rpx;
+}
+.car-text{
+  color: #EA5419;
+}
+.phone-text{
+  color: #8F8F8F;
+  font-size: 25rpx;
+}
+.margin-bottom{
+  margin-bottom: 23rpx;
+}
+.switch{
+  zoom: 0.75;
+}
+.btn{
+  font-size: 25rpx;
+  color: #EA5419;
+  width: 160rpx;
+  height: 60rpx;
+  border: #EA5419 3rpx solid;
+  text-align: center;
+  border-radius: 10rpx;
+  line-height: 60rpx;
+  margin-left: 25rpx;
+}
+.btn-strong{
+  color: #fff;
+  background-color: #EA5419;
+}
+.section-1{
+  height: 250rpx;
+  margin-bottom: 40rpx;
+}
+.btn-hover{
+  opacity:0.7 !important;
+}
+.null-tab{
+  height: 260rpx;
+}
+.null-box{
+  width: 80%;
+  height: max-content;
+}
+.null-code{
+  height: 250rpx;
+}
+.null-code image{
+  width: 150rpx;
+}
+.null-code-text{
+  color: #a7a7a7;
+  font-size:25rpx;
+}
+.popup-box{
+  width: 600rpx;
+  height: 500rpx;
+  background-color: #fff;
+  padding-top: 35rpx;
+}
+.popup-icon{
+  width: 120rpx;
+  height:120rpx;
+  border-radius: 100%;
+  background-color: #F2AC3C;
+  color: #EC602A;
+  margin: 0 auto;
+}
+.popup-icon>image{
+  width: 85rpx;
+  height:auto;
+}
+.popup-title{
+  color:#EC602A;
+  font-size: 35rpx;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.popup-tips{
+  color:#969696;
+  font-size: 26rpx;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 55rpx;
+}
+.popup-btn{
+  margin: auto;
+  background-color: #EC602A;
+  width:230rpx ;
+  height: 80rpx;
+  border-radius: 12rpx;
+  color: white;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin-top: 66rpx;
+}
+.popup-btn-light{
+  background-color: #fff;
+  border:#C8C8C8 1rpx solid ;
+  color: #8d8d8d;
+}
+
+

@@ -1,0 +1,19 @@
+<view class="tab">
+  <view class="tab-title flex align-center justify-between">
+    <view class="tab-title-a">附近免费领取的4S店</view>
+    <view class="tab-title-b flex justify-between">
+      <image src="../../static/icon/re-pin.png" mode="widthFix"></image>
+      <view> {{area}}</view>
+    </view>
+  </view>
+  <view class="line"></view>
+
+<slot></slot>
+
+
+  <view class="settled-4s flex align-center justify-between" hover-class="hover">
+    <image src="../../static/icon/settled.png" mode="widthFix"></image>
+   <view bindtap="settler">我是4s店，我要入驻</view> 
+  </view>
+
+</view>

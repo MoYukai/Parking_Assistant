@@ -1,0 +1,11 @@
+page{
+  background-color: #f4f4f4;
+}
+.collapse{
+  background-color: #fff;
+  width: 85%;
+  margin: auto;
+  border-radius:15rpx ;
+  padding: 15rpx 0rpx;
+  margin:20rpx auto;
+}

@@ -1,0 +1,19 @@
+<van-popup show="{{show}}" bind:close="onClose" round>
+  <view class="pop">
+    <view class="one flex flex-direction justify-around">
+      <view class="name">{{name}}</view>
+      <view class="address">{{address}}</view>
+      <view class="phone">热线：<blue bindtap="makePhoneCall" data-phone="{{phone}}">{{phone}}</blue>
+      </view>
+    </view>
+    <view class="two">
+      <image src="{{picture}}" mode="widthFix"></image>
+    </view>
+    <view class="three flex align-center justify-center" >
+      <view class="icon-a flex flex-direction align-center justify-between" hover-class="hover" bindtap="openLoc">
+        <image class="icon" src="../../static/icon/route.png" mode="widthFix"></image>
+        <view >路线</view>
+      </view>
+    </view>
+  </view>
+</van-popup>

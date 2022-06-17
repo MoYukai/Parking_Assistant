@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "keyboard":"../../components/keyboard/keyboard",
+    "van-popup": "@vant/weapp/popup/index",
+    "ad-tab": "../../components/ADtab/ADtab"
+  },
+  "navigationBarTitleText": "绑定挪车码",
+  "backgroundColorBottom": "#F0F0F0",
+  "backgroundColorTop" : "#F2AC3C"
+}

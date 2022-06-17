@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/scanResult/scanResult",
+    "pages/mine/mine",
+    "pages/manageQR/manageQR",
+    "pages/bindQR/bindQR",
+    "pages/callRecords/callRecords",
+    "pages/getMyQR/getMyQR",
+    "pages/admin/index/index",
+    "pages/printQR/printQR",
+    "pages/buyQR/buyQR",
+    "pages/order_confirmation/order_confirmation",
+    "pages/admin/gen_stickers/gen_stickers",
+    "pages/admin/list/list",
+    "pages/admin/list_of_4s/list_of_4s",
+    "pages/admin/user_admin/user_list/user_list",
+    "pages/getMyQR/map_4s/map_4s",
+    "pages/getMyQR/map_4s/settler/settler"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F2AC3C",
+    "navigationBarTitleText": "挪车助手",
+    "navigationBarTextStyle": "white",
+    "backgroundColorBottom": "#F0F0F0",
+    "backgroundColorTop": "#F2AC3C"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#000000",
+    "color": "#8d8d8d",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./static/icon/home.png",
+        "selectedIconPath": "./static/icon/home@select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "./static/icon/me.png",
+        "selectedIconPath": "./static/icon/me@select.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "位置信息效果展示"
+    }
+  },
+  "plugins": {
+    "mini-shop-plugin": {
+      "version": "1.1.57",
+      "provider": "wx34345ae5855f892d"
+    }
+  }
+}

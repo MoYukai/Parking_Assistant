@@ -1,0 +1,68 @@
+<view class="bg-top">
+  <view class="row tip">
+    欢迎使用挪车助手，请填写以下信息完成车牌和手机号的绑定，以便享受隐私挪车服务
+  </view>
+  <view class="tab">
+    <view class="row no">
+      编号：{{seriesno}}
+    </view>
+    <view class="row-2 flex flex-direction justify-around align-center">
+      <view class="title">请输入你的车牌号</view>
+      <view class="master">
+        <!-- 嵌入开始 -->
+        <view class="keyboard-box">
+          <view class="car-num">
+            <view class="title margin-bottom-sm flex justify-between">
+              <view></view>
+              <view class="flex justify-between align-center">
+                <image class="switch-car-num" src="../../static/icon/exchange.png" mode="widthFix"></image>
+                <text class="text-theme" data-index="{{index}}"
+                  bindtap="changeCarType">{{carType==2?"普通车牌号":"新能源车牌号"}}</text>
+              </view>
+            </view>
+            <view class="car-number">
+              <view class="car-block" wx:for="{{carBoxNum}}" wx:for-item="itm" wx:for-index="idx" data-index="{{index}}"
+                wx:key="index" bindtap="openCarBoard">{{carNumStr[idx]}}</view>
+            </view>
+          </view>
+          <keyboard abc="{{abc}}" isCarBoard="{{isCarBoard}}" bind:carValue="carValue" bind:myevent="onMyEvent">
+          </keyboard>
+        </view>
+        <!-- 嵌入结束 -->
+      </view>
+    </view>
+    <view class="flex flex-direction justify-between phone-sms">
+      <view class="row-2 flex align-center justify-between">
+        <view class="title-row">手机号：</view>
+        <input class="input" bindinput="phoneInput" bindtap="closeMask" maxlength="11" value="{{phone}}"/>
+      </view>
+      <view class="row-2 flex align-center justify-between">
+        <view class="title-row">验证码：</view>
+        <view class="flex justify-between sms-box">
+          <input class="input-sms" bindinput="codeInput" bindtap="closeMask"/>
+          <button class="send-sms flex align-center justify-center" hover-class="btn-hover" bindtap="sendSms" disabled="{{smsDisable}}">{{tips}}
+          </button>
+        </view>
+      </view>
+    </view>
+    <view class="btn flex align-center justify-center" hover-class="btn-hover" bindtap="bindAndUse">绑定并使用</view>
+  </view>
+
+  <ad-tab></ad-tab>
+</view>
+<image class="bg-top2" src="../../static/img/index-arc.png" mode="widthFix">
+</image>
+<van-popup show="{{show}}" position="center" bind:close="onClose" custom-style="border-radius:20rpx">
+  <view class="popup-box">
+    <view class="popup-icon flex align-center justify-center">
+      <image src="../../static/icon/correct.png" mode="widthFix"></image>
+    </view>
+    <view class="popup-title">
+      绑定成功
+    </view>
+    <view class="popup-tips">
+      温馨提示：如需测试扫码拨打，请使用其他手机扫码拨打即可
+    </view>
+    <view class="popup-btn" hover-class="btn-hover" bindtap="gotoMang">去管理我的挪车码</view>
+  </view>
+</van-popup>
